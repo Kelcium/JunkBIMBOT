@@ -1,0 +1,13 @@
+# Contains all packages used in this project
+# May contain some redundancies
+# Python 3.9.9
+
+configparser = 5.0.2
+openai = 1.52.1
+# For speech-to-text: Whisper model https://platform.openai.com/docs/guides/speech-to-text
+moviepy = 1.0.3
+numpy = 2.0.2
+setuptools-rust = 1.10.2
+pytorch = 2.5.1
+imutils = 0.5.4
+ifcopenshell = 0.8.0
