@@ -29,9 +29,15 @@ class WhisperClient:
         audio_extract.write_audiofile(audio)
 
         # Process and extract audio transcription
-        transcription = self.process_audio(audio)
+        transcription = self.process_audio(audio_extract)
 
         audio_extract.close()
         video_extract.close()
 
         return transcription
+    
+if __name__ == '__main__':
+    OpenAIKey = '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'
+    client = WhisperClient(OpenAIKey)
+    audiofilepath = 'Audio/temp.wav'
+    client.process_audio(audiofilepath)
